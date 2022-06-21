@@ -1,6 +1,6 @@
 import { query } from "../index.js";
 
-const sqlString = `CREATE TABLE IF NOT EXISTS snipped (
+const sqlString = `CREATE TABLE IF NOT EXISTS snippets (
     id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
     title TEXT,
     description TEXT,
@@ -11,7 +11,7 @@ const sqlString = `CREATE TABLE IF NOT EXISTS snipped (
 
 async function createTable() {
     const result = await query(sqlString);
-    console.log(`created table, yay!`);
+    console.log("created table, yay!");
 }
 
 createTable();

@@ -5,7 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "db:createTable": "node -r dotenv/config ./db/scripts/createTable.js",
+    "db:populateTable": "node -r dotenv/config ./db/scripts/populateTable.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +21,8 @@
   },
   "homepage": "https://github.com/SchoolOfCode/w9_backend-project-syntax-samurai-s#readme",
   "dependencies": {
+    "dotenv": "^16.0.1",
+    "nodemon": "^2.0.16",
     "pg": "^8.7.3"
   }
 }

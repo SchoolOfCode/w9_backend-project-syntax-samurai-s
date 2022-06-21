@@ -8,7 +8,7 @@ export const pool = new pg.Pool({
     password: process.env.PGPASSWORD,
     port: process.env.PGPORT,
     ssl: { rejectUnauthorized: false },
-})
+});
 
 
 export function query (text, params, callback) {
