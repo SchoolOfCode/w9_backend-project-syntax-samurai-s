@@ -1,6 +1,6 @@
 
 
-export const snippets : [
+{ "snippets": [
 
     {
         "title" : "Math.floor & Math.random",
@@ -10,7 +10,7 @@ export const snippets : [
         "docs" : "https://www.w3schools.com/js/js_random.asp"
     },
 
-    {
+    {   
         "title" : "Switch Statement",
         "description" : "Use the switch statement to select one of many code blocks to be executed.",
         "video" : "https://www.youtube.com/watch?v=fM5qnyasUYI",
@@ -121,3 +121,5 @@ export const snippets : [
             }
     
 ]
+
+}
