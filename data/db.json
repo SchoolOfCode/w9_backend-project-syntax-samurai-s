@@ -1,6 +1,6 @@
-{
 
-"snippets" : [
+
+export const snippets : [
 
     {
         "title" : "Math.floor & Math.random",
@@ -117,8 +117,7 @@
        " }",
         
         "oddOrEven();" ],
-                "docs" : "https://bobbyhadz.com/blog/javascript-find-odd-numbers-in-array",
+                "docs" : "https://bobbyhadz.com/blog/javascript-find-odd-numbers-in-array"
             }
     
 ]
-}
