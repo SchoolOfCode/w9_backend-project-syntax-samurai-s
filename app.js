@@ -1,7 +1,7 @@
 import express from "express";
 const app = express();
-const PORT = process.env.port || 3000;
-//import router from "./Routes/index"
+const PORT = 3000 || process.env.port;
+import router from "./Routes/snippets.js";
 
 app.use(express.json());
 
@@ -13,8 +13,7 @@ app.get("/", function (req, res) {
   });
 });
 
-//app.use("/crystals", router);
-
+app.use("/snippets", router);
 
 app.listen(PORT, function () {
   console.log(`Server is running on port ${PORT}`);
