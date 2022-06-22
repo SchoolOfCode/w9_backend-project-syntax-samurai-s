@@ -4,8 +4,8 @@ import { getSnippets } from '../models/snippets.js';
 const router = express.Router();
 
 router.get("/" , async function(req , res){
-    const title = req.query.title;
-    
+    const searchQuery = req.query.title;
+    console.log(`searched query log: ${searchQuery}`);
     // const result = await getSnippets(title);
     
    // define the object it'll return
