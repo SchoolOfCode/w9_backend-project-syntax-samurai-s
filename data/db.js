@@ -57,7 +57,7 @@ export const snippets = [
         title: "Scroll to Top Feature",
         description: "Add function to button/event listener which will scroll to top once clicked",
         video: "https://www.youtube.com/watch?v=3Jbb3sQVVq0",
-        codesytax: [ `const scrollTop = () => window.scrollTo(0, 0);
+        codesyntax: [ `const scrollTop = () => window.scrollTo(0, 0);
         scrollTop()` ],
         docs: "https://www.w3schools.com/howto/howto_js_scroll_to_top.asp"
         },
@@ -65,7 +65,7 @@ export const snippets = [
         title: "Copy to clipboard",
         description: "Copies text to clipboard",
         video: "https://www.youtube.com/watch?v=pLNCu8js--M",
-        codesytax: [ `function CopyText() {
+        codesyntax: [ `function CopyText() {
           // select the text element.
           let text = document.getElementById('myText');
         // select text. 
