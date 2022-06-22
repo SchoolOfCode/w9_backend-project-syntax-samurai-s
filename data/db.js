@@ -14,17 +14,17 @@ export const snippets = [
         title : "Switch Statement",
         description : "Use the switch statement to select one of many code blocks to be executed.",
         video : "https://www.youtube.com/watch?v=fM5qnyasUYI",
-        codesyntax : ` [ switch(expression) {
+        codesyntax :  [ `switch(expression) {
             case x:
-            // code block"
+            // code block
             break;
             case y:
-             // code block"
+             // code block
             break;
             default:
             // code block
             } 
-        ]`,
+        `],
         docs : "https://www.w3schools.com/js/js_switch.asp"
     },
 
@@ -48,8 +48,8 @@ export const snippets = [
         title : "While Loop",
         description : "Loops can execute a block of code as long as a specified condition is true. The while loop loops through a block of code as long as a specified condition is true. Watch out for endless loops! ",
         video : "https://www.youtube.com/watch?v=PpbFyLTtpWI",
-        codesyntax : [ `while (condition) { //
-            code block to be executed}` ],
+        codesyntax : [ `while (condition) {
+            //code block to be executed}` ],
         docs : "https://www.w3schools.com/js/js_loop_while.asp"
     },
 
