@@ -25,3 +25,16 @@ export async function createNewSnippet(newSnippet) {
 
 	return result.rows;
 }
+
+export async function deleteSnippet(id) {
+	const result = await pool.query(
+		'DELETE FROM snippets WHERE id = ($1) RETURNING *;',
+		[id]
+	);
+	return result;
+}
+
+export async function getAllSnippets() {
+	const result = await pool.query('SELECT * FROM snippets');
+	return result.rows;
+}

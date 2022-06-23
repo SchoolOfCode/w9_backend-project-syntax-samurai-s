@@ -1,7 +1,17 @@
 import express from 'express';
-import { getSnippets, createNewSnippet } from '../models/snippets.js';
+import {
+	getSnippets,
+	createNewSnippet,
+	deleteSnippet,
+	getAllSnippets,
+} from '../models/snippets.js';
 
 const router = express.Router();
+
+router.get('/', async function (req, res) {
+	const responseObject = { success: true, data: await getAllSnippets() };
+	res.json(responseObject);
+});
 
 router.get('/', async function (req, res) {
 	const searchQuery = req.query.title;
@@ -24,6 +34,12 @@ router.get('/', async function (req, res) {
 router.post('/', async function (req, res) {
 	const newSnippet = req.body;
 	const result = createNewSnippet(newSnippet);
+	res.json({ success: true, data: await result });
+});
+
+router.delete('/:id', async function (req, res) {
+	const id = Number(req.params.id);
+	const result = deleteSnippet(id);
 	res.json({ success: true, data: await result });
 });
 
