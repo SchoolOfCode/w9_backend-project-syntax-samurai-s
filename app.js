@@ -1,9 +1,15 @@
 import express from "express";
+import cors from "cors";
 const app = express();
 const PORT = 3000 || process.env.port;
 import router from "./Routes/snippets.js";
 
 app.use(express.json());
+app.use(cors())
+
+app.get('/products/:id', function (req, res, next) {
+  res.json({msg: 'This is CORS-enabled for all origins!'})
+})
 
 // test route
 app.get("/", function (req, res) {
